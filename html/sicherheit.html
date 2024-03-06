@@ -1,0 +1,143 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+        <title>USB-Anschluss</title>
+        <meta name="description" content="Dies ist ein Projekt über den USB-Anschluss für IT mit dem Thema HTML">
+        <meta name="author" content="Tobias Friedl">
+        <meta name="keywords" content="Tobias Friedl, USB Anschluss, USB, IT-Projekt, Schule">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js"></script>
+    </head>
+
+    <body>
+    <div id="wrapper">
+        <header id="kopfbereich">
+            <img src="../img/usb_banner.jpg">
+            <div id="kopfbereich_text">
+                <h1><a href="../index.html">Der USB-Anschluss</a></h1>
+                <h2>Ein Projekt von Robin, Jan und Tobi F.</h2>
+            </div>
+        </header>
+        <hr id="trenn_null">
+        <div id="menu">
+	       <a class="menu_link" href="../index.html">
+            <div class="menu_leiste" id="menu_null">
+	         Startseite
+            </div>
+           </a>
+           <a class="menu_link" href="was_ist_usb.html">
+            <div class="menu_leiste" id="menu_eins">
+               Was ist USB?
+            </div>
+           </a>
+           <a class="menu_link" href="usb_arten.html">
+            <div class="menu_leiste" id="menu_zwei">                   
+               USB 2/3.0/3.1/3.2
+            </div>
+           </a>
+           <a class="menu_link" href="hardware.html">
+            <div class="menu_leiste" id="menu_frei">
+               Hardware
+            </div>   
+           </a>     
+           <a class="menu_link" href="übertragung.html">
+            <div class="menu_leiste" id="menu_vier">
+               Übertragungstechnik   
+            </div> 
+           </a>
+           <a class="menu_link" href="software.html">
+            <div class="menu_leiste" id="menu_funf">
+               Software 
+            </div>
+           </a>
+           <a class="menu_link" href="sicherheit.html">
+            <div class="menu_leiste" id="menu_sechs">
+              Sicherheit
+            </div>    
+           </a>   
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr id="trenn_null">
+        <div id="inhalt">    
+            <section class="container" id="thema">
+                <img src="../img/sicherheit_oben.jpg">
+                <h2>Sicherheit</h2>
+                    <p>
+                        USB-Sticks sind eine sehr beliebte Möglichkeit für einen schnellen und unkomplizierten 
+                        Datenaustausch. Doch die wenigsten Nutzer wissen, dass auch ein USB Stick ein hohes 
+                        Sicherheitsrisiko darstellen kann.                    
+                    </p>
+                    <p>
+                        Auf den beiden IT-Messen Def Con und BlackHat wurde von Sicherheitsexperten auf ein 
+                        Horrorszenario hingewiesen, welches sehr realistisch ist.
+                    </p>
+                    <p>
+                        Eine mögliche Angriffsstrategie zielt auf die Umprogrammierung des 
+                        USB-Controller-Chips
+                        ab. Diese sind sehr weit verbreitet und kommen 
+                        z.B. in USB-Sticks zum Einsatz. Einen wirksamen Schutz gegen diese Umprogrammierung 
+                        gibt es derzeit nicht. Viele Hersteller verzichten auf Schutzmaßnamen diesbezüglich. 
+                        So kann also jeder USB-Stick potenziell schädlich sein.
+                    </p>
+                    <p> 
+                        Mögliche Szenarien die eine solche Umprogrammierung nach sich ziehen kann, wären folgende:
+                    </p>
+                    <ul>
+                        <li>USB-Sticks können so umprogrammiert werden, dass sich der USB-Stick z.B. als Tastatur ausgibt und so Eingaben des Nutzers emulieren kann um dann z.B. <a class="button" href="#popup1">Maleware</a> auf dem PC zu installieren. </li>
+                        <li>Der USB-Stick gibt sich als Netzwerkkarte aus und kann so die DNS-Einstellungen des Computers ändern, um dann den gesamten Datenverkehr des Computers um zu leiten.</li>
+                        <li>Modifizierte USB-Sticks können beim Bootvorgang einen Virus laden, der das Betriebssystem noch vor dem Booten infiziert. </li>
+                    </ul>
+                    <p>
+                        Da die meisten Maleware-Scanner keinen Zugriff auf die Firmware von USB-Geräten 
+                        haben, gibt es leider keinen effektiven Schutz gegen solche Angriffe. 
+                        USB-Firewalls, welche nur bestimmte Geräteklassen blockieren können, 
+                        existieren (noch) nicht. Einen gewissen Schutz bietet die Eigenschaft von macOS, 
+                        den Benutzer beim Anstecken eines als Tastatur erkannten USB-Geräts zu fragen, 
+                        ob die Tastatur aktiviert werden soll. Der effektivste und beste Schutz ist aber der, 
+                        keine USB-Geräte zu verwenden von denen man nicht weiß wo sie herkommen 
+                        (z.B. ein gefundener USB-Stick in der Schule, bei dem man nicht weiß wem er gehört). 
+                        Aber einen 100% Schutz gegen Attacken über USB-Geräte gibt es nicht, 
+                        außer man verzichtet Komplett auf USB-Geräte was in der heutigen Zeit eher schwer ist.                   
+                    </p>
+                    <p>
+                        Eine weitere interessante Angriffsmöglichkeit war es, dass ein USB-Laufwerk 
+                        über die AutoRun-Funktion einen Rechner Infiziert. Wie war das möglich? 
+                        USB-Laufwerke waren in der Lage, auf die AutoRun-Funktion von Windows zu zugreifen, um selbstständig 
+                        Programme zu starten. Das konnten sie, um z.B. Treiber für USB-Geräte zu 
+                        installieren ohne das der Nutzer eine Installation manuell starten muss. 
+                        Über diese Funktion war es aber auch möglich, dass der USB-Stick Schadsoftware 
+                        (Maleware) auf dem Rechner installiert.  Diese Sicherheitslücke wurde allerdings 
+                        mit Windows 7 entfernt, als man USB-Laufwerken den Zugriff auf die AutoRun-Funktion 
+                        verwehrte. Rechner mit älteren Windows Versionen (z.B. Windows XP oder Windows Vista)
+                        können allerdings immer noch über diese Methode angegriffen werden.
+                    </p>
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <h2>Maleware</h2>
+                            <a class="close" href="#">&times;</a>
+                            <div class="content">
+                                    Software (wie z. B. Viren, Würmer usw.), die in Computersysteme eindringen und dort Störungen oder Schäden verursachen kann       
+                            </div>
+                        </div>
+                    </div>          
+            </section>
+            <section class="container" id="links">
+                <h2>Hilfreiche Links</h2>
+                <p>Wikipedia:<br>
+                    <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus">Universal Serial Bus</a><br>
+                    <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus#USB_3.0">USB 3.0/3.1/3.2</a><br>
+                    <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus#Hardware">Hardware</a><br>
+                    <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus#%C3%9Cbertragungstechnik/Spezifikation">Übertragungstechnik</a><br>
+                    <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus#Software-Architektur">Software</a><br>
+                    <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus#Sicherheitsproblematik">Sicherheitsproblematik</a><br>
+                </p><br>
+            </section>
+        </div>
+        <footer id="fussbereich">
+            <p>Dies ist ein IT-Projekt von Robin, Jan und Tobi F.</p>
+        </footer>
+    </div>
+    </body>
+</html>
